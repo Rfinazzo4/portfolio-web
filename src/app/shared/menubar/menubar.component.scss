@@ -1,3 +1,6 @@
+@import "/src/assets/scss-variables.scss";
+@import "~bootstrap/dist/css/bootstrap.css";
+
 header {
   padding: 30px 0;
 }
@@ -36,9 +39,12 @@ header li:last-child {
 
 
 header ul li a {
-  color: #000;
+  color: $black;
   font-weight: 600;
   position: relative;
+}
+header ul li a:hover {
+  text-decoration: none;
 }
 
 header ul:first-child li:first-child a:first-child:hover::after, header ul li a.is-active::after{
@@ -47,7 +53,8 @@ header ul:first-child li:first-child a:first-child:hover::after, header ul li a.
 
 header ul li a:hover::after, header ul li a.is-active::after{
   content: '';
-  background: #ff4d4d;
+  background: #ff3c3c;
+  opacity: .8;
   height: 9px;
   position: absolute;
   left: 1px;
