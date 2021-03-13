@@ -1,1 +1,89 @@
-/* You can add global styles to this file, and also import other style files */
+/* Global css styles */
+
+@import "~bootstrap/dist/css/bootstrap.css";
+
+html {
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+p {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+.page-wrapper {
+  position: relative;
+}
+
+.page-wrapper::before {
+  content: '';
+  //background: #bb0a21ff;
+  //background: #ff1a1a;
+  //background: #ff4d4d;
+  background: #ff3333;
+  height: 100vh;
+  width: 30vw;
+  position: absolute;
+  z-index: -1;
+}
+
+.p-flex {
+  display: flex;
+}
+.p-flex-align-center {
+  align-items: flex;
+}
+
+.p-flex-justify-sb {
+  justify-content: space-between;
+}
+
+
+#background {
+  background: #fceabb;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f8b500, #fceabb);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f8b500, #fceabb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* Color Pallete Hex */
+$almond: #F6E6D7ff;
+$maximum-blue-purple: #a6b1e1ff;
+$firebrick: #bb0a21ff;
+$black: #000004ff;
+$davys-grey: #4d5359ff;
+
+/* Color Pallete Hex Gradient */
+$gradient-top: linear-gradient(0deg, #F6E6D7ff, #a6b1e1ff, #bb0a21ff, #000004ff, #4d5359ff);
+$gradient-right: linear-gradient(90deg, #F6E6D7ff, #a6b1e1ff, #bb0a21ff, #000004ff, #4d5359ff);
+$gradient-bottom: linear-gradient(180deg, #F6E6D7ff, #a6b1e1ff, #bb0a21ff, #000004ff, #4d5359ff);
+$gradient-left: linear-gradient(270deg, #F6E6D7ff, #a6b1e1ff, #bb0a21ff, #000004ff, #4d5359ff);
+$gradient-top-right: linear-gradient(45deg, #F6E6D7ff, #a6b1e1ff, #bb0a21ff, #000004ff, #4d5359ff);
+$gradient-bottom-right: linear-gradient(135deg, #F6E6D7ff, #a6b1e1ff, #bb0a21ff, #000004ff, #4d5359ff);
+$gradient-top-left: linear-gradient(225deg, #F6E6D7ff, #a6b1e1ff, #bb0a21ff, #000004ff, #4d5359ff);
+$gradient-bottom-left: linear-gradient(315deg, #F6E6D7ff, #a6b1e1ff, #bb0a21ff, #000004ff, #4d5359ff);
+$gradient-radial: radial-gradient(#F6E6D7ff, #a6b1e1ff, #bb0a21ff, #000004ff, #4d5359ff);
+
+/* Color Pallete Hex Gradient */
+@font-face {
+  font-family: 'Housttely Signature';
+  src: url('assets/fonts/signature/HousttelySignature.eot');
+  src: url('assets/fonts/signature/HousttelySignature.eot?#iefix') format('embedded-opentype'),
+      url('assets/fonts/signature/HousttelySignature.woff2') format('woff2'),
+      url('assets/fonts/signature/HousttelySignature.woff') format('woff'),
+      url('assets/fonts/signature/HousttelySignature.ttf') format('truetype'),
+      url('assets/fonts/signature/HousttelySignature.svg#HousttelySignature') format('svg');
+  font-style: normal;
+  font-display: swap;
+}
