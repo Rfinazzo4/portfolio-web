@@ -1,0 +1,68 @@
+@import "/src/assets/scss-variables.scss";
+@import "~bootstrap/dist/css/bootstrap.css";
+
+.projects-grid {
+  display: flex;
+  justify-content: space-evenly;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.projects-wrapper {
+  content: '';
+  background: $almond;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  z-index: -1;
+  --background-attachment: ;
+}
+
+.card {
+  max-width: 500px;
+  background-color: white;
+  margin: 60px;
+  margin-bottom: auto;
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card mat-card-header div {
+  background-size: cover;
+  background-position: center;
+}
+.card-avatar-angular {
+  background-image: url(../../../assets/images/angular.png);
+}
+
+.card-avatar-springboot {
+  background-image: url(../../../assets/images/spring-boot.png);
+}
+
+.card mat-card-header mat-card-title {
+  color: $black;
+  font-size: x-large;
+}
+
+.card mat-card-actions {
+  display: flex;
+  justify-content: center;
+}
+
+.card mat-card-actions a {
+  text-decoration: none;
+  color: $black;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top:5px;
+  padding-bottom:5px;
+  margin: auto;
+}
+
+.card mat-card-actions a:hover {
+  text-decoration: none;
+  color: $maximum-blue-purple;
+  background: $davys-grey;
+  opacity: .5;
+}
+
+

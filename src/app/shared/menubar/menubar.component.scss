@@ -2,18 +2,23 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 
 header {
-  padding: 30px 0;
+  padding: 10px 0;
+  background-color: #1a1515;
+  z-index: -1;
+  box-shadow: 0 5px 30px -10px #1a1515;
 }
 
 .portfolio-header {
   font-family: Housttely Signature, Fallback, sans-serif;
   font-weight: bolder;
-  font-size: x-large;
+  font-size: small;
+  color: white; // not here
 }
 
 header ul {
   display: flex;
   align-items: center;
+  margin-bottom: 0;
 }
 
 
@@ -39,8 +44,8 @@ header li:last-child {
 
 
 header ul li a {
-  color: $black;
-  font-weight: 600;
+  color: white; // $black
+  font-weight: 500;
   position: relative;
 }
 header ul li a:hover {
@@ -51,20 +56,19 @@ header ul:first-child li:first-child a:first-child:hover::after, header ul li a.
   background-color: transparent;
 }
 
-header ul li a:hover::after, header ul li a.is-active::after{
+header ul:last-child li a:hover::after, header ul li a.is-active::after{
   content: '';
   background: #ff3c3c;
-  opacity: .8;
+  opacity: .6;
   height: 9px;
   position: absolute;
   left: 1px;
-  z-index: -1;
   bottom: 0;
   right: -3px;
 }
 
 #gitHubButton {
-  color: inherit;
+  color: white;
   outline: none;
   border: none;
   background: transparent;
@@ -75,10 +79,10 @@ header ul li a:hover::after, header ul li a.is-active::after{
 }
 
 #gitHubButton, a, span {
-  color: inherit;
+  color: white;
   font-family: Roboto,Helvetica Neue,sans-serif;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 #gitHubButton img {

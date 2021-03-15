@@ -8,7 +8,8 @@ html {
 body {
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  overflow-x: hidden;
+  background: $almond;
 }
 
 p {
@@ -41,6 +42,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100vw;
   position: absolute;
   z-index: -1;
+  background-repeat: repeat-y;
 }
 
 .page-inner-wrapper::before {
@@ -50,6 +52,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 30vw;
   position: absolute;
   z-index: -1;
+  background-repeat: repeat-y;
 }
 
 .p-flex {

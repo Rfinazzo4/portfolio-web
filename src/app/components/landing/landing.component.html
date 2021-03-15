@@ -1,4 +1,4 @@
-<section>
+<section class="landing-wrapper">
     <div class="container">
       <div class="row">
         <div class="col-sm-5">
@@ -15,7 +15,24 @@
             <br>software engineer, solutions developer, and creative problem solver just trying to make the world a better place, one line of code at a time.
             <br><br>Learn about me, check out my projects, and follow me on socials!
           </p>
-          <a href="#" class="read-more">Read More <img src="./../../../assets/images/arrow_img.png" alt="Read more about Ryan" width="18"></a>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/ryan-finazzo-5b6226139/" rel="noopener noreferrer" target="_blank">
+              <fa-icon [icon]="faLinkedin"></fa-icon>
+            </a>
+            <a href="https://github.com/Rfinazzo4" rel="noopener noreferrer" target="_blank">
+              <fa-icon [icon]="faGithubSquare"></fa-icon>
+            </a>
+            <a href="https://anchor.fm/white-claw-wednesdays" rel="noopener noreferrer" target="_blank">
+              <fa-icon [icon]="faPodcast"></fa-icon>
+            </a>
+            <a href="https://www.youtube.com/channel/UCgJktX3lyJindwJqOTm0Zog" rel="noopener noreferrer" target="_blank">
+              <fa-icon [icon]="faYoutubeSquare"></fa-icon>
+            </a>
+            <a href="https://www.instagram.com/ryanfinazzo/" rel="noopener noreferrer" target="_blank">
+              <fa-icon [icon]="faInstagramSquare"></fa-icon>
+            </a>
+          </div>
+          <a [routerLink]="['/aboutme']" [routerLinkActive]="['is-active']" class="read-more">Read More <img src="./../../../assets/images/arrow_img.png" alt="Read more about Ryan" width="18"></a>
         </div>
       </div>
     </div>

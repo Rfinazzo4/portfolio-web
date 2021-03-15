@@ -1,6 +1,9 @@
 @import "/src/assets/scss-variables.scss";
 @import "~bootstrap/dist/css/bootstrap.css";
 
+.landing-wrapper {
+  margin-top: 7vh;
+}
 .profile-pic {
   background: url(../../../assets/images/profile-alt.jpg);
   width: 100%;
@@ -8,7 +11,7 @@
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
-  box-shadow: 20px 20px $black;
+  box-shadow: 20px 20px #1a1515;
 }
 
 .p-rtg-sec {
@@ -16,6 +19,35 @@
   flex-direction: column;
   justify-content: space-between;
   padding-left: 2vw;
+}
+
+.banner-text {
+  //background-color: $davys-grey;
+  //opacity: .8;
+  width: auto;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.banner-text h1 {
+  font-size: 43px;
+  font-weight: 600;
+  //color: white;
+  color: $davys-grey;
+}
+
+.banner-text hr {
+  //border-top: 4px solid $davys-grey;
+  border-top: 3px solid $maximum-blue-purple;
+  width: 80%;
+}
+
+.banner-text p {
+  //color: white;
+  font-weight: 600;
+  color: $davys-grey;
+  font-size: 20px;
 }
 
 .signature-name {
@@ -32,8 +64,20 @@
   color: $davys-grey;
   width: 100%;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 600;
   text-align: center;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: auto;
+}
+
+.social-links fa-icon {
+  color: $maximum-blue-purple;
+  font-size: 3em;
 }
 
 .read-more {
@@ -54,29 +98,4 @@
 
 .read-more:hover img{
   transform: translateX(5px);
-}
-
-.banner-text {
-  background-color: $davys-grey;
-  opacity: .8;
-  width: auto;
-  border-radius: 10px;
-  text-align: center;
-  margin-top: 20px;
-}
-
-.banner-text h1 {
-  font-size: 43px;
-    font-weight: 600;
-    color: white;
-}
-
-.banner-text hr {
-  border-top: 5px dotted white;
-  width: 70%;
-}
-
-.banner-text p {
-  color: white;
-  font-size: 20px;
 }

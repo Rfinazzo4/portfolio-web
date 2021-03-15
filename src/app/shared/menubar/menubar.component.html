@@ -4,13 +4,13 @@
       <div class="col-sm-12 p-flex p-flex-align-center p-flex-justify-sb">
         <ul>
           <li class="portfolio-header">Portfolio</li>
-          <li><button mat-button id="gitHubButton" [routerLink]="['/']"><span><img src="../../../assets/images/github-circle-white-transparent.svg" alt="github img link"> GitHub</span></button>
+          <li><a href="https://github.com/Rfinazzo4" id="gitHubButton" target="_blank"><span><img src="../../../assets/images/github-circle-white-transparent.svg" alt="github img link"> GitHub</span></a>
           </li>
         </ul>
         <ul>
           <li><a [routerLink]="['/']" [routerLinkActive]="['is-active']">Home</a></li>
-          <li><a [routerLink]="['/resume']">Resume</a></li>
           <li><a [routerLink]="['/projects']">Projects</a></li>
+          <li><a [routerLink]="['/resume']">Resume</a></li>
           <li><a [routerLink]="['/aboutme']">About Me</a></li>
           <li><a [routerLink]="['/contact']">Contact</a></li>
         </ul>
