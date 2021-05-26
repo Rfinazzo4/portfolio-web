@@ -3,13 +3,14 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 
 html {
+  overflow-x: hidden;
 }
 
 body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background: $almond;
+  background: $almond-light-almond-gradient-right;
 }
 
 p {
@@ -31,13 +32,9 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 
-.page-wrapper {
-  position: relative;
-}
-
 .page-wrapper::before {
   content: '';
-  background: $almond;
+  background: $almond-light-almond-gradient-right;
   height: 100vh;
   width: 100vw;
   position: absolute;

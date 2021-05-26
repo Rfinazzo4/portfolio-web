@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-menubar',
@@ -7,9 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenubarComponent implements OnInit {
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

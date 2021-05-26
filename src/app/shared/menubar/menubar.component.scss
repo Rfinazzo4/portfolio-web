@@ -1,8 +1,24 @@
 @import "/src/assets/scss-variables.scss";
 @import "~bootstrap/dist/css/bootstrap.css";
 
+/* .grid rules */
+
+.row {
+  clear: both;
+  display: flex;
+  justify-content: space-between
+}
+
+.column {
+  padding: 0 2vw;
+}
+
+.small {
+  width: 100%;
+}
+
 header {
-  padding: 10px 0;
+  padding: 1.5vh 0;
   background-color: #1a1515;
   z-index: -1;
   box-shadow: 0 5px 30px -10px #1a1515;
@@ -23,15 +39,15 @@ header ul {
 
 
 header ul, li {
-	padding: 0 40px;
+	padding: 0 3vw;
 }
 
 header ul:first-child {
-  padding-left: 80px;
+  padding-left: 3vw;
 }
 
 header ul:last-child {
-  padding-right: 80px;
+  padding-right: 3vw;
 }
 
 header li:first-child {
@@ -56,7 +72,7 @@ header ul:first-child li:first-child a:first-child:hover::after, header ul li a.
   background-color: transparent;
 }
 
-header ul:last-child li a:hover::after, header ul li a.is-active::after{
+header section:last-child ul li a:hover::after, section ul li a.is-active::after{
   content: '';
   background: #ff3c3c;
   opacity: .6;
