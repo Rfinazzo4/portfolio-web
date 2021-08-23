@@ -1,0 +1,84 @@
+@import "/src/assets/scss-variables.scss";
+@import "~bootstrap/dist/css/bootstrap.css";
+
+/* .grid rules */
+.row {
+  clear: both;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.row-center {
+  clear: both;
+  display: flex;
+  justify-content: center;
+}
+
+.column {
+  //padding: 0 2vw;
+}
+
+.small {
+  width: 100%;
+}
+
+.tibata-wrapper {
+  content: '';
+  background: $almond-light-almond-gradient-right;
+  height: 100%;
+  width: 100vw;
+  position: absolute;
+  z-index: -1;
+  text-align: -webkit-center;
+}
+
+.tibata-title {
+  //width: 100%;
+  padding-top: 2%;
+  margin: 0;
+}
+
+.tibata-title h2 {
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
+}
+
+.sectional {
+  width: 97%;
+  height: fit-content;
+  background-color: white;
+  border-style: groove;
+  border-width: thin;
+  border-radius: 20px;
+  align-self: center;
+}
+
+.main-timer h1 {
+  font-size: 20   vw;
+}
+
+.updating-timer-text {
+  font-size: 40%;
+  padding: 1%;
+}
+
+.buttons {
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.buttons button{
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.buttons button:first-child{
+  float: right;
+  margin-right: 5%;
+}
+
+.buttons button:last-child{
+  float: left;
+  margin-left: 5%;
+}

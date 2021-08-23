@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TibatatimerComponent implements OnInit {
 
+  public timer: string = '00:00';
+  public timerText: string = 'GO GO GO!';
   constructor() { }
 
   ngOnInit(): void {
